@@ -1,0 +1,8 @@
+title: OTA
+description: An Octopress 2.0 twitter aside plugin.
+google_analytics: UA-58346414-2
+show_downloads: false
+theme: jekyll-theme-minimal
+
+gems:
+  - jekyll-mentions
