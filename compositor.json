@@ -1,0 +1,92 @@
+{
+  "name": "rdcb/octopress-twitter-aside",
+  "version": "0.1.4",
+  "libraries": {
+    "xv": "^1.1.25"
+  },
+  "title": "",
+  "branch": "gh-pages",
+  "style": {
+    "name": "Future",
+    "componentSet": {
+      "nav": "nav/BasicNav",
+      "header": "header/BannerHeader",
+      "article": "article/BasicArticle",
+      "footer": "footer/BasicFooter"
+    },
+    "fontFamily": "\"Avenir Next\", Helvetica, sans-serif",
+    "heading": {
+      "fontWeight": 500,
+      "textTransform": "uppercase",
+      "letterSpacing": "0.2em"
+    },
+    "alternativeText": {
+      "textTransform": "uppercase",
+      "fontWeight": 400,
+      "letterSpacing": "0.2em",
+      "opacity": 0.75
+    },
+    "colors": {
+      "text": "#333",
+      "background": "#fff",
+      "primary": "#666",
+      "secondary": "#888",
+      "highlight": "#1f80ff",
+      "muted": "#f6f6f6",
+      "border": "#eee"
+    },
+    "layout": {
+      "centered": true,
+      "maxWidth": 1024,
+      "bannerHeight": "80vh"
+    }
+  },
+  "content": [
+    {
+      "component": "nav",
+      "links": [
+        {
+          "href": "https://github.com/rdcb/octopress-twitter-aside",
+          "text": "GitHub"
+        }
+      ]
+    },
+    {
+      "component": "header",
+      "heading": "octopress-twitter-aside",
+      "subhead": "An Octopress 2.0 twitter aside plugin | https://cb.raisedadead.com/octopress-twitter-aside",
+      "children": [
+        {
+          "component": "ui/TweetButton",
+          "text": "octopress-twitter-aside: An Octopress 2.0 twitter aside plugin | https://cb.raisedadead.com/octopress-twitter-aside",
+          "url": ""
+        },
+        {
+          "component": "ui/GithubButton",
+          "user": "rdcb",
+          "repo": "octopress-twitter-aside"
+        }
+      ]
+    },
+    {
+      "component": "article",
+      "metadata": {
+        "source": "github.readme"
+      },
+      "html": "\n<p>An <a href=\"http://github.com/imathis/octopress\">Octopress 2.0</a> twitter aside plugin to embed twitter timelines, latest tweets, etc.</p>\n<h2>Installation</h2>\n<p>Get the plugin.</p>\n<pre>&gt; git clone https:<span class=\"hljs-regexp\">//gi</span>thub.com<span class=\"hljs-regexp\">/raisedadead/</span>octopress-twitter-aside.git .<span class=\"hljs-regexp\">/source/</span>_includes<span class=\"hljs-regexp\">/custom/</span>asides<span class=\"hljs-regexp\">/ota</span></pre><h2>Configuration</h2>\n<ol>\n<li>Create a new widget at <a href=\"https://twitter.com/settings/widgets\">this link</a></li>\n<li>Copy the generated HTML code and paste it in a notepad.</li>\n<li>Search for <code>data-widget-id</code>. You should see something like <code>data-widget-id=&quot;xxxxxxxxxxxxxxxxx&quot;</code>.</li>\n<li>Copy the <code>xxxxxxxxxxxxxxxxx</code> numeric id. This is your <code>twitter_widget_id</code>.</li>\n<li>Edit/Add the below in <code>_config.yml</code></li>\n</ol>\n<pre><span class=\"hljs-meta\"># Twitter</span>\n<span class=\"hljs-symbol\">twitter_user:</span> username\n<span class=\"hljs-symbol\">twitter_widget_id:</span> xxxxxxxxxxxxxxxxx</pre>"
+    },
+    {
+      "component": "footer",
+      "links": [
+        {
+          "href": "https://github.com/rdcb/octopress-twitter-aside",
+          "text": "GitHub"
+        },
+        {
+          "href": "https://github.com/rdcb",
+          "text": "rdcb"
+        }
+      ]
+    }
+  ]
+}
